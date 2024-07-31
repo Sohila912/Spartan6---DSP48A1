@@ -39,7 +39,7 @@ wire [35:0] multiplier_out;
 wire [47:0] postadderout;  
 wire CARRYOUT0_IN;  
 wire [47:0] x_out,z_out;
-assign valueB = (B_INPUT == "DIRECT") ? B :
+assign valueB = (B_INPUT   == "DIRECT") ? B :
                    (B_INPUT == "CASCADE") ? BCIN :
                    18'b0;  
 assign CarryInValue = (CARRYINSEL == "OPMODES") ? Opmode0[5] :
