@@ -68,6 +68,7 @@ assign M = M0;
 
 reg_mux #(.F_width(1), .RSTTYPE(RSTTYPE), .F_reg(CARRYINREG)) CYI (.F(CarryInValue),.clk(CLK),.reset(RSTCARRYIN),.f_mux_out(CarryIn0),.CE(CECARRYIN));
 
+//x and z mux
 mux48 x_mux(.A({48'b0}),.B({18'b0,multiplier_out}),.C(P),.D({D,A,B}),.SEL(Opmode0[1:0]),.OUT(x_out));   
 mux48 z_mux(.A({48'b0}),.B(PCIN),.C(P),.D(C),.SEL(Opmode0[3:2]),.OUT(z_out)); 
 

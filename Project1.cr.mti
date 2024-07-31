@@ -5,18 +5,18 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	mux48
 
-} {} {}} D:/Digital_Labs/Project1/Main_proj.v {1 {vlog -work work -vopt -stats=none D:/Digital_Labs/Project1/Main_proj.v
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module Main_project
-
-Top level modules:
-	Main_project
-
 } {} {}} D:/Digital_Labs/Project1/reg_mux.v {1 {vlog -work work -vopt -stats=none D:/Digital_Labs/Project1/reg_mux.v
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module reg_mux
 
 Top level modules:
 	reg_mux
+
+} {} {}} D:/Digital_Labs/Project1/Main_proj_tb.v {1 {vlog -work work -vopt -stats=none D:/Digital_Labs/Project1/Main_proj_tb.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module testbench
+
+Top level modules:
+	testbench
 
 } {} {}}
