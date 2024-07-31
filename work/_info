@@ -36,6 +36,7 @@ Z3 o-quiet -auto_acc_if_foreign -work work +acc
 Z4 tCvgOpt 0
 n@_opt
 Z5 OL;O;2021.1;73
+R1
 T_opt1
 !s110 1722357415
 VDMROQdK2Z0[<HdFmcAWg51
@@ -59,22 +60,22 @@ n@_opt2
 R5
 R1
 vMain_project
-Z7 !s110 1722364998
+Z7 !s110 1722462478
 !i10b 1
-!s100 M`]IIB0B[Y`3ZU?;fHm:n3
-I8J2JbN::gUB;Qn9263^ne0
+!s100 6^9:A29I[VKI^]_c`>7G82
+IRmi07WfdXKAg[`6bY@2I;2
 Z8 dD:/Digital_Labs/Project1
-w1722364774
+w1722462405
 8D:/Digital_Labs/Project1/Main_proj.v
 FD:/Digital_Labs/Project1/Main_proj.v
-!i122 88
-L0 1 137
+!i122 96
+L0 1 86
 Z9 VDg1SIo80bB@j0V0VzS_@n1
 Z10 OL;L;2021.1;73
 r1
 !s85 0
 31
-Z11 !s108 1722364998.000000
+Z11 !s108 1722462478.000000
 !s107 D:/Digital_Labs/Project1/Main_proj.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/Digital_Labs/Project1/Main_proj.v|
 !i113 0
@@ -90,7 +91,7 @@ R8
 w1722192240
 8D:/Digital_Labs/Project1/mux48.v
 FD:/Digital_Labs/Project1/mux48.v
-!i122 89
+!i122 97
 L0 1 14
 R9
 R10
@@ -112,7 +113,7 @@ R8
 w1722191193
 8D:/Digital_Labs/Project1/reg_mux.v
 FD:/Digital_Labs/Project1/reg_mux.v
-!i122 87
+!i122 95
 L0 1 43
 R9
 R10
@@ -128,14 +129,14 @@ R4
 vtestbench
 R7
 !i10b 1
-!s100 O2`g_j>H@GCB628fN3?aN1
-I1jSJ2BR:^[0LIzZ8zjC8Y2
+!s100 ;EbMS0jlU]80k^NET7AUk1
+IV]5A44hHNoeXY3z<Kb;K[2
 R8
-w1722364992
+w1722365132
 8D:/Digital_Labs/Project1/Main_proj_tb.v
 FD:/Digital_Labs/Project1/Main_proj_tb.v
-!i122 90
-L0 1 67
+!i122 98
+L0 1 62
 R9
 R10
 r1
