@@ -38,7 +38,8 @@ wire [17:0] preadderout,preadderout_mux;
 wire [35:0] multiplier_out;
 wire [47:0] postadderout;  
 wire CARRYOUT0_IN;  
-wire [47:0] x_out,z_out;
+wire [47:0] x_out,z_out,concatenatedDAB;
+assign concatenatedDAB = {D,A,B};
 assign valueB = (B_INPUT   == "DIRECT") ? B :
                    (B_INPUT == "CASCADE") ? BCIN :
                    18'b0;  
@@ -69,7 +70,7 @@ assign M = M0;
 reg_mux #(.F_width(1), .RSTTYPE(RSTTYPE), .F_reg(CARRYINREG)) CYI (.F(CarryInValue),.clk(CLK),.reset(RSTCARRYIN),.f_mux_out(CarryIn0),.CE(CECARRYIN));
 
 //x and z mux
-mux48 x_mux(.A({48'b0}),.B({18'b0,multiplier_out}),.C(P),.D({D,A,B}),.SEL(Opmode0[1:0]),.OUT(x_out));   
+mux48 x_mux(.A({48'b0}),.B({12'b0,multiplier_out}),.C(P),.D(concatenatedDAB),.SEL(Opmode0[1:0]),.OUT(x_out));   
 mux48 z_mux(.A({48'b0}),.B(PCIN),.C(P),.D(C),.SEL(Opmode0[3:2]),.OUT(z_out)); 
 
 //post adder/subtractor
